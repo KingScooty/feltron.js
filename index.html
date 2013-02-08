@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <script src="components/raphael/raphael-min.js"></script>
+        <script src="components/jquery/jquery.min.js"></script>
+        <script src="feltron.js"></script>
+
+        <style type="text/css">
+            .graph {
+                color: #21abe8;
+            }
+            figure {
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <figure id="data-heat1" class="graph heat">
+            <table>
+                <thead>
+                    <tr>
+                        <th>OFF SIDE</th>
+                        <th>STUMPS</th>
+                        <th>LEG SIDE</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0.1</td>
+                        <td>0.1</td>
+                        <td>0</td>
+                        <td>0.1</td>
+                        <td>0.1</td>
+                        <td>0</td>
+                        <th scope="row">Full Toss</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0.4</td>
+                        <td>0.3</td>
+                        <td>0.2</td>
+                        <td>0.1</td>
+                        <td>0.1</td>
+                        <td>0</td>
+                        <th scope="row">Yorker</tr>
+                    </tr>
+                    <tr>
+                        <td>0.1</td>
+                        <td>2.2</td>
+                        <td>1.1</td>
+                        <td>0.8</td>
+                        <td>0.5</td>
+                        <td>0.2</td>
+                        <td>0</td>
+                        <th scope="row">Half Volley</th>
+                    </tr>
+                    <tr>
+                        <td>0.2</td>
+                        <td>38.1</td>
+                        <td>15</td>
+                        <td>6.9</td>
+                        <td>4</td>
+                        <td>2.2</td>
+                        <td>0.1</td>
+                        <th scope="row">Length</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>11.5</td>
+                        <td>4.2</td>
+                        <td>2.4</td>
+                        <td>2</td>
+                        <td>0.8</td>
+                        <td>0</td>
+                        <th scope="row">B.O.A.L</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>2.5</td>
+                        <td>1.3</td>
+                        <td>1.6</td>
+                        <td>0.5</td>
+                        <td>0.5</td>
+                        <td>0</td>
+                        <th scope="row">Short</th>
+                    </tr>
+                </tbody>
+                
+                <tfoot>
+                    <tr>
+                        <th>WIDE O.O</th>
+                        <th>OUTSIDE OFF</th>
+                        <th>OFF STUMP</th>
+                        <th>MIDDLE STUMP</th>
+                        <th>LEG STUMP</th>
+                        <th>OUTSIDE LEG</th>
+                        <th>WIDE D.L</th>
+                    </tr>
+                </tfoot>
+            </table>
+            
+        </figure>
+
+        <script>
+
+            $(function() {
+                $('.graph').feltron();
+            });
+
+        </script>
+
+    </body>
+</html>

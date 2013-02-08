@@ -1,0 +1,5 @@
+# Can ignore specific files
+components
+templates
+.DS_Store
+style.css
